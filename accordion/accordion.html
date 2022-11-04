@@ -1,18 +1,150 @@
-<link rel="stylesheet" href="./accordion.css" />
+<link rel="stylesheet" href="clubdesk.css" />
+
+<!-- Ab hier kopieren! -->
+<link rel="stylesheet" href="wwwfiles/faq-accordion.css" />
 
 <div>
-  <details>
+  <!-- Mitglied werden -->
+  <details class="faq-card" onclick="adjustClasslistForCornerRadius(this)">
     <summary class="top-card cd-tile-h-main-heading">
       <!-- Hier den Titel des Accordions einfügen (sichtbar im eingeklappten Zustand)-->
-      1: Hello World is really a word that developpers work with?
+      Wie werde ich Mitglied bei ALOHA Beachvolley Solothurn?
     </summary>
 
     <p class="bottom-card cd-tile-h-detail-value">
       <!-- Hier den Inhalt des Accordions einfügen (sichtbar im ausgeklappten Zustand)-->
-      Yes it absolutely is. Hello World is our way to utter admiration for
-      what
-      users do on our countless demo
-      projects.
+      Wir möchten Allen die Chance geben, die perfekte Trainingsgruppe zu finden. <br>
+      Dir stehen zwei Schnuppertrainings zu, nach denen du die Entscheidung treffen kannst, ob du Mitglied werden willst
+      oder nicht. <br>
+      <br>
+      <!-- TODO Anmeldeformular verlinken -->
+      <!-- TODO Kontaktperson verlinken -->
+      Melde dich <a href="Anmeldeformular">hier</a> für ein Schnuppertraining an. Wir werden uns schnellstmöglich mit
+      einer Trainingsmöglichkeit bei Dir melden. <br>
+      Entschliesst Du dich nach deinem Schnuppertraining, Mitglied zu werden, melde dich bei der <a
+        href="Kontaktperson">Kontaktperson des entsprechenden Niveaus</a>,
+      um das Mitgliedschaftsformular zu erhalten.
+    </p>
+  </details>
+
+  <!-- Trainingsaufbau -->
+  <details class="faq-card" onclick="adjustClasslistForCornerRadius(this)">
+    <summary class="top-card cd-tile-h-main-heading">
+      <!-- Hier den Titel des Accordions einfügen (sichtbar im eingeklappten Zustand)-->
+      Wie sind die Trainings bei ALOHA gestaltet?
+    </summary>
+
+    <p class="bottom-card cd-tile-h-detail-value">
+      <!-- Hier den Inhalt des Accordions einfügen (sichtbar im ausgeklappten Zustand)-->
+      Alle Trainings bei den Aktiven dauern zwei Stunden. In der ersten halben Stunde findet ein gemeinsames Warm-Up mit
+      allen Gruppen des jeweiligen Trainingsblocks statt. <br>
+      Danach folgt in den geleiteten Trainings ein 60 - 90 minütiger Fokus-Block mit technischen und taktischen Inputs
+      und in der Regel noch Zeit für freies Spiel. <br>
+      In den Light-Gruppen steht die Zeit nach dem Warm-Up gänzlich für freies Spiel zur Verfügung.
+    </p>
+  </details>
+
+  <!-- Kosten Mitgliedschaft -->
+  <details class="faq-card" onclick="adjustClasslistForCornerRadius(this)">
+    <summary class="top-card cd-tile-h-main-heading">
+      <!-- Hier den Titel des Accordions einfügen (sichtbar im eingeklappten Zustand)-->
+      Welche Kosten kommen bei einer Mitgliedschaft auf mich zu?
+    </summary>
+
+    <div class="bottom-card cd-tile-h-detail-value">
+      <p style="margin-top: 0; margin-bottom: 5px">
+        <!-- Hier den Inhalt des Accordions einfügen (sichtbar im ausgeklappten Zustand)-->
+        Die Kosten pro Jahr setzen sich aus einem Mitgliedschaftsbeitrag und den Trainingsgebühren zusammen. <br>
+        <br>
+        Die jeweiligen Beträge (in Franken pro Jahr) findest Du in der folgenden Tabelle:
+      </p>
+      <table class="cost-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Mitgliedschaftsbeitrag</th>
+            <th>Trainingsgebühren</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Aktive</td>
+            <td>60 .-</td>
+            <td>50 .- (1 Training pro Woche) <br>100 .- (2 Trainings pro Woche)</td>
+          </tr>
+          <tr>
+            <td>Passive</td>
+            <td>30 .-</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Nachwuchs</td>
+            <td>40 .-</td>
+            <td>20 .- (fix)</td>
+          </tr>
+          <tr>
+            <td>Späteinsteiger:innen <br>(ab 1. Juli der laufenden Saison)</td>
+            <td>60 .-</td>
+            <td>20 .- (1 Training pro Woche) <br>40 .- (2 Trainings pro Woche)</td>
+          </tr>
+          <tr>
+            <td>Vorstand</td>
+            <td>0 .-</td>
+            <td>0 .-</td>
+          </tr>
+          <tr>
+            <td>Ehrenmitglieder</td>
+            <td>0 .-</td>
+            <td>0 .-</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+  <!-- Trainings ohne Mitgliedschaft -->
+  <details class="faq-card" onclick="adjustClasslistForCornerRadius(this)">
+    <summary class="top-card cd-tile-h-main-heading">
+      <!-- Hier den Titel des Accordions einfügen (sichtbar im eingeklappten Zustand)-->
+      Kann ich bei ALOHA trainieren, ohne Mitglied zu sein?
+    </summary>
+
+    <p class="bottom-card cd-tile-h-detail-value">
+      <!-- Hier den Inhalt des Accordions einfügen (sichtbar im ausgeklappten Zustand)-->
+      Du kannst als Trainingsgast dabei sein. Im Rahmen der Schnuppertraining-Vereinbarung sind zwei Trainings
+      kostenlos. <br>
+      Ab dem dritten Training zahlst Du eine <strong>Pauschale von CHF 60.- pro Jahr</strong>. <br>
+      <br>
+      Als Trainingsgast hast du <strong>kein Anrecht auf einen fixen Trainingsplatz</strong> und wirst nur an den
+      Trainings teilnehmen
+      können, sofern in der Gruppe ein Platz frei ist. <br>
+    </p>
+  </details>
+
+  <!-- Winterangebote -->
+  <details class="faq-card" onclick="adjustClasslistForCornerRadius(this)">
+    <summary class="top-card cd-tile-h-main-heading">
+      <!-- Hier den Titel des Accordions einfügen (sichtbar im eingeklappten Zustand)-->
+      Gibt es bei ALOHA ein Winter- bzw. Indoor-Angebot?
+    </summary>
+
+    <p class="bottom-card cd-tile-h-detail-value">
+      <!-- Hier den Inhalt des Accordions einfügen (sichtbar im ausgeklappten Zustand)-->
+      ALOHA versteht sich als reiner Beachvolleyball-Verein. Entsprechend gibt es kein geregeltes
+      Angebot ausserhalb der Beachvolleyball-Saison. <br>
+      Allerdings steht dir bei ALOHA ein grosser Pool beachvolleyball-begeisterter Menschen offen, die oft auch in der
+      Off-Season in Beachhallen trainieren. <br>
+      Wenn du dich eher für ein Hallenvolleyball Angebot während der Off-Season interessierst, stehen dir in der
+      Umgebung zahlreiche Indoor-Vereine zur Auswahl. <br>
     </p>
   </details>
 </div>
+<script>
+  function adjustClasslistForCornerRadius(target) {
+    if (target.tagName.toLowerCase() != "details") return;
+
+    !target.hasAttribute("open") ?
+      target.firstElementChild.classList.add("open") :
+      target.firstElementChild.classList.remove("open");
+  }
+</script>

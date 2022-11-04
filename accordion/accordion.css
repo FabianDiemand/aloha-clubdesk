@@ -1,0 +1,31 @@
+/* 
+  CSS Styles für Accordions im FAQ
+*/
+.top-card {
+  margin: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #000000;
+  padding: 10px;
+}
+
+.bottom-card {
+  margin: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #eeeeee;
+  padding: 10px;
+}
+
+/*
+  AB HIER NICHT IN CLUBDESK KOPIEREN!!!
+  NUR FÜR LOKALE TESTS BENÖTIGT!!!
+*/
+.cd-tile-h-main-heading {
+  font-weight: bold;
+  color: yellow;
+}
+
+.cd-tile-h-detail-value {
+  color: black;
+}
